@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    position: relative;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 3%;
+    font-family: 'Big Shoulders Text', cursive;
+    transition: all 500ms;
+    overflow: hidden;
+}
+
+button:hover { 
+    color: #48d6fa;
+    border-color: #48d6fa;
+}
+
+canvas {
+    position: absolute;
+}
+
+.disabled {
+    display: none;
+}
