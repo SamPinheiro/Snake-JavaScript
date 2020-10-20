@@ -55,7 +55,7 @@ function Snake() {
     }
 
     this.render = function () {
-        ctx.fillStyle = "white";
+        ctx.fillStyle = 'white';
         for (let i = 0; i < this.tail.length; i++) {
             ctx.fillRect(this.tail[i][0], this.tail[i][1], grid, grid);
         }

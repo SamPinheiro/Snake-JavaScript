@@ -1,8 +1,18 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .game, .scoreboard {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+body {
     height: 100vh;
+    font-family: monospace;
 }
 
 button {
@@ -14,7 +24,6 @@ button {
     color: #ffffff;
     border-color: #ffffff;
     border-radius: 3%;
-    font-family: 'Big Shoulders Text', cursive;
     transition: all 500ms;
     overflow: hidden;
 }
@@ -26,6 +35,34 @@ button:hover {
 
 canvas {
     position: absolute;
+}
+
+.game {
+    width: 50%;
+    height: 100%;
+}
+
+.scoreboard {
+    width: 50%;
+    height: 100%;
+    align-items: flex-start;
+    margin-top: 150px;
+    font-family: monospace;
+    flex-flow: wrap;
+}
+
+.scoreboard h1 {
+    font-size: 45px;
+}
+
+.scoreboard table {
+    margin-top: -400px;
+    width: 100%;
+    text-align: center;
+}
+
+.scoreboard table tr, td {
+    font-size: 30px;
 }
 
 .disabled {

@@ -5,13 +5,13 @@ function Player() {
         this.score += points;
     } 
 
-    this.resetScore = function() {
+    this.reset = function() {
         this.score = 0;
     }
 
     this.renderScore = function() {
         ctx.font = '40px Verdana';
-        ctx.fillStyle = "white";
-        ctx.fillText("Pontos: " + this.score, 20, 50);
+        ctx.fillStyle = 'white';
+        ctx.fillText('Pontos: ' + this.score, 20, 50);
     }
 }
